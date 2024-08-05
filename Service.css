@@ -1,0 +1,103 @@
+.bolim_3 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-bottom: 1px solid rgb(221, 211, 211) 90%;
+  z-index: 1;
+  padding: 0 20px; /* Tashqi bo'shliq */
+  margin-bottom: 100px;
+}
+
+.bolim_3::before {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Pastki qismga joylashtirish */
+  left: 200px; /* Chap tomondan 200px bo‘shliq */
+  right: 180px; /* O‘ng tomondan 180px bo‘shliq */
+  border-bottom: 0.8px solid rgb(221, 211, 211); /* Ostki border */
+}
+
+.baba {
+  width: 100%;
+  height: 100px; /* To'g'ri kelishi uchun balandlikni oshirdik */
+  padding: 20px 180px; /* Yangi padding */
+  text-align: center; /* Yozuvlarni markazlashtirish */
+}
+
+.baba p:first-of-type {
+  color: red;
+  margin: 10px; /* Marginlarni olib tashlash */
+}
+
+.baba p:nth-of-type(2) {
+  color: blue;
+  font-size: 40px;
+  margin: 0;
+}
+
+.xizmatlar {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap; /* Kichik ekranlarda qatorni ajratish */
+  margin: 50px auto; /* Markazlashtirish */
+}
+
+.card {
+  flex: 1;
+  width: 450px;
+  height: 450px;
+  background-color: #F3F3FF;
+  border: 1px solid #e2e6eb;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 250px;
+  position: relative;
+}
+
+.card img {
+  width: 150px;
+  padding: 20px 30px;
+}
+
+.card h3 {
+  color: #7190bf;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 10px 0; /* Yangi margin */
+}
+
+.card p {
+  color: #6c757d;
+  font-size: 17px;
+  margin: 10px 0; /* Yangi margin */
+  letter-spacing: normal;
+  flex: 1;
+}
+
+.card:hover {
+  border: 1px solid red;
+}
+
+.learn-more {
+  position: relative;
+  color: #d9534f;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px; /* Yangi margin */
+}
+
+.strel {
+  width: 50%;
+  height: 80px;
+  position: absolute; /* Pozitsiyani to'g'rilash */
+  right: 20px;
+  bottom: 20px; /* Vaqt uchun margin qo'shish */
+}

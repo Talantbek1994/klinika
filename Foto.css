@@ -1,0 +1,58 @@
+.foto {
+  max-width: 100%;
+  height: 850px;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  transform-origin: left center; /* Yaqinlashish o'ng tomondan */
+}
+
+.foto.zoom {
+  transform: scale(1.1); /* Yaqinlashtirish effekti */
+  transition: transform 4s ease-in-out; /* 4 sekund davomida */
+}
+
+.soc {
+  width: 100px;
+  height: 300px;
+  margin-left: 50px;
+  position: relative;
+  padding-top: 200px;
+}
+
+.social-icon {
+  position: relative;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+}
+
+.social-tooltip {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.social-icon:hover .social-tooltip {
+  opacity: 1;
+}

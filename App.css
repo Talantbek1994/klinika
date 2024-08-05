@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  width: 100%;
+  position: relative;
+  background-color: #fff ;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .App h1 {
+    font-size: 20px;
+  }
+
+  .App p {
+    font-size: 14px;
+  }
+}
+
+/* Styles for screens smaller than 480px */
+@media (max-width: 480px) {
+  .App h1 {
+    font-size: 18px;
+  }
+
+  .App p {
+    font-size: 12px;
+  }
+}

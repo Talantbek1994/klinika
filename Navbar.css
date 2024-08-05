@@ -1,0 +1,143 @@
+/* Navbar styling */
+.navbar {
+  width: 100%; /* Ekran kengligiga moslashishi uchun */
+  height: 100px;
+  position: fixed;
+  top: 0; /* Yuqoriga biriktirish */
+  z-index: 1000; /* Navbarni boshqa elementlar ustida bo'lishini ta'minlash */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: #a397e8 0.2px solid;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Qurilishni yaxshilash uchun soyalar */
+}
+
+/* Asosiy kontent bo'limiga padding qo'shing */
+body {
+  padding-top: 75px; /* Navbar balandligi */
+}
+
+/* Logo styling */
+.navbar-logo {
+  width: 160px;
+  margin-left: 75px;
+  padding-right: 10px; /* Qo'shimcha joy berish */
+  border-right: 0.5px solid rgb(179, 179, 225); /* Faqat o'ng tomonga ko'k border */
+}
+
+.logorasm {
+  height: 45px;
+  margin-right: 10px;
+  transition: transform 0.5s ease; /* Logoning kattalashishi uchun animatsiya */
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.2);
+}
+
+/* Navbar menu styling */
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #301d9c;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar-menu li a:hover{
+  color: black;
+}
+
+/* Navbar additional items styling */
+.navbar-extra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-button {
+ 
+  color: #CF2323;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.contact-button:hover{
+  color: #043C7C;
+}
+
+/* Language selector styling */
+.language-selector {
+  position: relative;
+  display: flex;
+  border: none;
+  outline: none;
+}
+
+.language-selector select {
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #043C7C;
+  cursor: pointer;
+  background-size: 16px 16px;
+}
+
+.language-selector select:hover{
+  color: #CF2323;
+}
+.flag-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.flag-icon-ru {
+  background-image: url('./assets/r2.png');
+}
+
+.flag-icon-uz {
+  background-image: url('./assets/uzb.png');
+}
+
+/* Modal styling */
+.modal-wrapper {
+  position: fixed;
+  z-index: 1000;
+  padding-top: 250px;
+  padding-left: 200px;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  background-color: #fff !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 170px;
+  height: 80px;
+}
+
+/* Modal overlay styling */
+/* Modal overlay styling */

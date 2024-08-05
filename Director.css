@@ -1,0 +1,111 @@
+.director::before {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Pastki qismga joylashtirish */
+    left: 50px; /* Chap tomondan 10px bo‘shliq */
+    right: 50px; /* O‘ng tomondan 10px bo‘shliq */
+    border-bottom: 0.8px solid rgb(221, 211, 211); /* Ostki border */
+}
+
+.director {
+    max-width: 100%;
+    height: 1100px;
+    position: relative;
+    border-bottom: 0.8px solid rgb(133, 12, 12) 80%;
+}
+
+.main {
+    max-width: 100%;
+    height: 850px;
+    display: flex;
+}
+
+.dir {
+    max-width: 50%;
+    height: 750px;
+}
+
+.video {
+    width: 650px;
+    height: 700px;
+    border-radius: 8px;
+    margin-left: 100px;
+    padding-top: 120px;
+}
+
+.ector {
+    max-width: 50%;
+    height: 700px;
+    padding: 20px 50px;
+    color: blue;
+    margin-left: 50px;
+    font-size: 17px;
+}
+
+.director-name {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.director-title {
+    color: red;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.director-message {
+    text-align: left;
+    margin-left: 20px;
+    color: gray;
+}
+
+.more {
+    background-color: red;
+    width: 160px;
+    border-radius: 25px;
+    border: none;
+    margin-left: 30px;
+    display: block;
+    height: 40px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3), 0 0 10px rgba(255, 0, 0, 0.2), 0 0 15px rgba(255, 0, 0, 0.1);
+}
+
+.more:hover {
+    border-radius: 25px;
+    transform: scale(1.2);
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.common {
+    width: 90%;
+    height: 170px;
+    margin-left: 70px;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid rgb(232, 213, 213);
+}
+
+.stat-card {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.stat-card h1 {
+    text-align: center;
+}
+
+.stat-card p {
+    text-align: center;
+    margin-top: -20px;
+}

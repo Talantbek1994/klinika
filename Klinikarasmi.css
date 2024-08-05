@@ -1,0 +1,45 @@
+.klinikarasmi{
+    width: 100%;
+    height: 620px;
+    background-color: aquamarine;
+    margin-top: 150px;
+}
+
+.grafik{
+    width: 700px;
+    height: 620px;
+    background-color: #003366;;
+    float: right;
+    border-radius: 12px;
+    margin: 0 200px;
+}
+.chiziq{
+    position: relative;
+    width: 85%;
+    height: 1px;
+    border: 1px solid #104783;
+    margin: 6px 50px;
+}
+.working-hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Adjust the background color */
+    color: #ffffff; /* Adjust the text color */
+    padding: 10px 50px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.svyazatsya{
+    width: 200px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 30px;
+    border:2px solid #104783;
+    transition: 0.3s ease;
+    margin: 20px 50px;
+    color: black;
+}
+.svyazatsya:hover{
+    transform: scale(1.1);
+}
